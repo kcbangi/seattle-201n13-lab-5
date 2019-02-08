@@ -9,9 +9,9 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
   var addition = a + b;
   console.log(addition);
-  //var message = 'The sum of '  + a +  " and " + b + ' is ' + addition + '.';
-    var message1 = 'The sum of 4 and 7 is 11.';
-  return ([addition, message1]);
+  var message = 'The sum of '  + a +  " and " + b + ' is ' + addition + '.';
+  var message1 = 'The sum of 4 and 7 is 11.';
+  return ([addition, message]);
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -27,11 +27,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var multip = a * b;
+  console.log(multip);
+  var messageMul = 'The product of ' + a +  " and " + b + ' is ' + multip + '.';
+  return ([multip, messageMul]);
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
